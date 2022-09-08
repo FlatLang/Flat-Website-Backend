@@ -1,0 +1,11 @@
+{
+  "sources": {
+    "main": {
+      "mainClass": "flat/website/functions/StatusBadge",
+      "source": "src",
+      "dependencies": {
+        "github:FlatLang/Server": "master"
+      }
+    }
+  }
+}

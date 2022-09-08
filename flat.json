@@ -1,0 +1,45 @@
+{
+  "name": "Flat-Website-Backend",
+  "version": "0.1.0",
+  "description": "Flat Website Backend",
+  "author": "Braden Steffaniak",
+  "license": "ISC",
+  "defaultTarget": "es6",
+  "scripts": {
+    "test": "node dist/test.js",
+    "StatusBadge": "node dist/index.js StatusBadge",
+    "server": "node dist/server.js"
+  },
+  "sources": {
+    "main": {
+      "mainClass": "flat/website/functions/StatusBadge",
+      "source": "src",
+      "dependencies": {
+        "github:FlatLang/System": "master",
+        "github:FlatLang/IO": "master",
+        "github:FlatLang/Json": "master",
+        "github:FlatLang/Http": "master",
+        "github:FlatLang/Time": "master",
+        "github:FlatLang/FuCli": "master"
+      }
+    },
+    "cmd": {
+      "mainClass": "flat/website/functions/Functions_Command",
+      "source": "src",
+      "dependencies": {}
+    },
+    "server": {
+      "mainClass": "flat/website/functions/Functions_Server",
+      "source": "src",
+      "outFile": "server.js",
+      "dependencies": {}
+    },
+    "test": {
+      "mainClass": "flat/website/functions/StatusBadge_TestSuite",
+      "source": "src/**/*_Test*.flat",
+      "dependencies": {
+        "github:FlatLang/Nest": "master"
+      }
+    }
+  }
+}

@@ -1,0 +1,73 @@
+package flat/website/functions
+
+import flatlang/io/File
+import flatlang/io/FileReader
+import flatlang/json/JsonDeserializer
+import flatlang/datastruct/HashMap
+import flatlang/http/Http
+import flatlang/time/Timer
+
+class {
+  public construct() {}
+
+  public async run() -> String {
+    let Array<HashMap<String, String>> badges = JsonDeserializer().parseArray(File("res/badges.json"))
+    let svgs = HashMap<String, String>[]
+    let timer = Timer():start()
+
+    var HashMap<String, String> badgeMap
+    var String svgData
+    var String urlData
+    var String labelData
+
+    external {
+      const result = await Promise.all(
+        #{badges.data}.map(async (badge) => {
+          #{badgeMap} = badge;
+
+          const url = #{badgeMap["url"]};
+          const label = #{badgeMap["label"]};
+          const svg = await #{Http.get(badgeMap["svg"])$};
+
+          return {
+            svg: svg.data,
+            url,
+            label
+          };
+        })
+      );
+
+      result.forEach((entry) => {
+        #{svgData} = entry.svg;
+        #{urlData} = entry.url;
+        #{labelData} = entry.label;
+        #{
+          svgs.add(
+            HashMap()
+              :add("svg", svgData)
+              :add("url", urlData)
+              :add("label", labelData)
+          )
+        }
+      });
+    }
+
+    Console.writeLine(timer.stop())
+
+    let svgContents = svgs.map((entry) => {
+      let aTagStart = "<" + "a target=\"_blank\" href=\"" + entry["url"] + "\"" + ">";
+      let aTagEnd = "<" + "/a" + ">"
+      let svgContent = entry["svg"]
+      let gStartIndex = svgContent.indexOf("<g")
+      let gEndIndex = svgContent.lastIndexOf("</g>") + 4
+
+      return svgContent.substring(0, gStartIndex) +
+        aTagStart +
+        svgContent.substring(gStartIndex, gEndIndex) +
+        aTagEnd +
+        svgContent.substring(gEndIndex)
+    })
+
+    return "<" + "svg" + ">" + svgContents.join("") + "<" + "/svg" + ">"
+  }
+}

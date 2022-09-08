@@ -1,0 +1,147 @@
+[
+  {
+    "label": "Build Flat",
+    "svg": "https://github.com/FlatLang/Flat/actions/workflows/build.yml/badge.svg",
+    "url": "https://github.com/FlatLang/Flat/actions/workflows/build.yml"
+  },
+  {
+    "label": "Stability Test",
+    "svg": "https://github.com/FlatLang/Stability-Test/actions/workflows/stability-test.yml/badge.svg",
+    "url": "https://github.com/FlatLang/Stability-Test/actions/workflows/stability-test.yml"
+  },
+  {
+    "label": "Test JS Compilation Target",
+    "svg": "https://github.com/FlatLang/Flat-JS/actions/workflows/test.yml/badge.svg",
+    "url": "https://github.com/FlatLang/Flat-JS/actions/workflows/test.yml"
+  },
+  {
+    "label": "Test ES6 Compilation Target",
+    "svg": "https://github.com/FlatLang/Flat-ES6/actions/workflows/test.yml/badge.svg",
+    "url": "https://github.com/FlatLang/Flat-ES6/actions/workflows/test.yml"
+  },
+  {
+    "label": "Build Standard Library",
+    "svg": "https://github.com/FlatLang/Standard-Library/actions/workflows/build.yml/badge.svg",
+    "url": "https://github.com/FlatLang/Standard-Library/actions/workflows/build.yml"
+  },
+  {
+    "label": "Test Airship",
+    "svg": "https://github.com/FlatLang/Airship/actions/workflows/build.yml/badge.svg",
+    "url": "https://github.com/FlatLang/Airship/actions/workflows/build.yml"
+  },
+  {
+    "label": "Test Flat Core",
+    "svg": "https://github.com/FlatLang/Flat-Core/actions/workflows/test.yml/badge.svg",
+    "url": "https://github.com/FlatLang/Flat-Core/actions/workflows/test.yml"
+  },
+  {
+    "label": "Test IO",
+    "svg": "https://github.com/FlatLang/IO/actions/workflows/test.yml/badge.svg",
+    "url": "https://github.com/FlatLang/IO/actions/workflows/test.yml"
+  },
+  {
+    "label": "Test Nest",
+    "svg": "https://github.com/FlatLang/Nest/actions/workflows/test.yml/badge.svg",
+    "url": "https://github.com/FlatLang/Nest/actions/workflows/test.yml"
+  },
+  {
+    "label": "Test FuCli",
+    "svg": "https://github.com/FlatLang/FuCli/actions/workflows/test.yml/badge.svg",
+    "url": "https://github.com/FlatLang/FuCli/actions/workflows/test.yml"
+  },
+  {
+    "label": "Test Time",
+    "svg": "https://github.com/FlatLang/Time/actions/workflows/test.yml/badge.svg",
+    "url": "https://github.com/FlatLang/Time/actions/workflows/test.yml"
+  },
+  {
+    "label": "Test System",
+    "svg": "https://github.com/FlatLang/System/actions/workflows/test.yml/badge.svg",
+    "url": "https://github.com/FlatLang/System/actions/workflows/test.yml"
+  },
+  {
+    "label": "Test Security",
+    "svg": "https://github.com/FlatLang/Security/actions/workflows/test.yml/badge.svg",
+    "url": "https://github.com/FlatLang/Security/actions/workflows/test.yml"
+  },
+  {
+    "label": "Test Regex",
+    "svg": "https://github.com/FlatLang/Regex/actions/workflows/test.yml/badge.svg",
+    "url": "https://github.com/FlatLang/Regex/actions/workflows/test.yml"
+  },
+  {
+    "label": "Test Read Line",
+    "svg": "https://github.com/FlatLang/Read-Line/actions/workflows/test.yml/badge.svg",
+    "url": "https://github.com/FlatLang/Read-Line/actions/workflows/test.yml"
+  },
+  {
+    "label": "Test Logger",
+    "svg": "https://github.com/FlatLang/Logger/actions/workflows/test.yml/badge.svg",
+    "url": "https://github.com/FlatLang/Logger/actions/workflows/test.yml"
+  },
+  {
+    "label": "Test Json",
+    "svg": "https://github.com/FlatLang/Json/actions/workflows/test.yml/badge.svg",
+    "url": "https://github.com/FlatLang/Json/actions/workflows/test.yml"
+  },
+  {
+    "label": "Test Git",
+    "svg": "https://github.com/FlatLang/Git/actions/workflows/test.yml/badge.svg",
+    "url": "https://github.com/FlatLang/Git/actions/workflows/test.yml"
+  },
+  {
+    "label": "Test Datastruct",
+    "svg": "https://github.com/FlatLang/Datastruct/actions/workflows/test.yml/badge.svg",
+    "url": "https://github.com/FlatLang/Datastruct/actions/workflows/test.yml"
+  },
+  {
+    "label": "Test Compiler String Extensions",
+    "svg": "https://github.com/FlatLang/Compiler-String-Extensions/actions/workflows/test.yml/badge.svg",
+    "url": "https://github.com/FlatLang/Compiler-String-Extensions/actions/workflows/test.yml"
+  },
+  {
+    "label": "Test CoLorIzer",
+    "svg": "https://github.com/FlatLang/CoLorIzer/actions/workflows/test.yml/badge.svg",
+    "url": "https://github.com/FlatLang/CoLorIzer/actions/workflows/test.yml"
+  },
+  {
+    "label": "Test Http",
+    "svg": "https://github.com/FlatLang/Http/actions/workflows/test.yml/badge.svg",
+    "url": "https://github.com/FlatLang/Http/actions/workflows/test.yml"
+  },
+  {
+    "label": "Test Math",
+    "svg": "https://github.com/FlatLang/Math/actions/workflows/test.yml/badge.svg",
+    "url": "https://github.com/FlatLang/Math/actions/workflows/test.yml"
+  },
+  {
+    "label": "Test Network",
+    "svg": "https://github.com/FlatLang/Network/actions/workflows/test.yml/badge.svg",
+    "url": "https://github.com/FlatLang/Network/actions/workflows/test.yml"
+  },
+  {
+    "label": "Test Redis",
+    "svg": "https://github.com/FlatLang/Redis/actions/workflows/test.yml/badge.svg",
+    "url": "https://github.com/FlatLang/Redis/actions/workflows/test.yml"
+  },
+  {
+    "label": "Test Elevate",
+    "svg": "https://github.com/FlatLang/Elevate/actions/workflows/test.yml/badge.svg",
+    "url": "https://github.com/FlatLang/Elevate/actions/workflows/test.yml"
+  },
+  {
+    "label": "Test Path",
+    "svg": "https://github.com/FlatLang/Path/actions/workflows/test.yml/badge.svg",
+    "url": "https://github.com/FlatLang/Path/actions/workflows/test.yml"
+  },
+  {
+    "label": "Test RegEdit",
+    "svg": "https://github.com/FlatLang/RegEdit/actions/workflows/test.yml/badge.svg",
+    "url": "https://github.com/FlatLang/RegEdit/actions/workflows/test.yml"
+  },
+  {
+    "label": "Test Npm-Client",
+    "svg": "https://github.com/FlatLang/Npm-Client/actions/workflows/test.yml/badge.svg",
+    "url": "https://github.com/FlatLang/Npm-Client/actions/workflows/test.yml"
+  }
+]
