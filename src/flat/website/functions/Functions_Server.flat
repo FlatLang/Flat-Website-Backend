@@ -18,7 +18,7 @@ class {
 
     let statusBadge = StatusBadge()
 
-    server.get("/test", async (req, res) => {
+    server.get("/badges.svg", async (req, res) => {
       res.setHeader("Content-Type", "image/svg+xml")
       res.send(statusBadge.run())
     })
