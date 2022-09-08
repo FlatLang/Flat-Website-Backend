@@ -58,7 +58,7 @@ class {
     var Int y = 0
     var Int maxWidth = 0
 
-    let svgContents = svgs.map((entry) => {
+    let svgContents = svgs.map((entry, i) => {
       let svgContent = entry["svg"]
       let success = svgContent.contains("passing")
       let content = generateStatusBox(entry["url"], success, x, y)
@@ -67,7 +67,7 @@ class {
 
       x += 20 + 1
 
-      if (x > 300) {
+      if (x > 300 && i != svgs.count - 1) {
         x = 0
         y += 20 + 1
       }
