@@ -20,6 +20,9 @@ class {
 
     server.get("/badges.svg", async (req, res) => {
       res.setHeader("Content-Type", "image/svg+xml")
+      res.setHeader("x-content-type-options", "nosniff")
+      res.setHeader("x-frame-options", "deny")
+      res.setHeader("x-xss-protection", "0")
       res.send(statusBadge.run())
     })
 
