@@ -61,7 +61,7 @@ class {
     let svgContents = svgs.map((entry, i) => {
       let svgContent = entry["svg"]
       let success = svgContent.contains("passing")
-      let content = generateStatusBox(entry["url"], success, x, y)
+      let content = generateStatusBox(entry["url"], entry["label"], success, x, y)
 
       maxWidth = Math.max(x + 20, maxWidth)
 
@@ -92,9 +92,12 @@ class {
       |"
   }
 
-  static generateStatusBox(String url, Bool success, Int x, Int y) -> String {
+  static generateStatusBox(String url, String title, Bool success, Int x, Int y) -> String {
+    let titleElement = "<" + "title>" + title + "</" + "title>"
+
     return "|
       <a target=\"_blank\" href=\"#{url}\">
+        #{titleElement}
         <g font-family=\"'DejaVu Sans',Verdana,Geneva,sans-serif\" font-size=\"11\">
           <rect x=\"#{x}\" y=\"#{y}\" width=\"20\" height=\"20\" ry=\"2\" rx=\"2\" fill=\"url(#{success ? "\#success-fill" : "\#failing-fill"})\"/>
         </g>
