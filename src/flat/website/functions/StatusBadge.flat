@@ -11,6 +11,7 @@ import flatlang/time/Timer
 
 class {
   let static Logger log = Logger(StatusBadge.class)
+  let static String TOKEN = System.getEnv("GITHUB_FETCH_ACTIONS_TOKEN")
 
   public construct() {}
 
@@ -25,6 +26,23 @@ class {
         :add("svg", svgData)
         :add("url", badge["url"])
         :add("label", badge["label"])
+    })
+
+    Console.writeLine("StatusBadge: #{timer.stop()}")
+    timer:reset():start()
+
+    let Array<HashMap<String, String>> runs = badges.mapParallel(async (badge) => {
+      let responseData = Http.get(
+        "https://api.github.com/repos/#{badge["repoOrganization"]}/#{badge["repoName"]}/actions/runs?per_page=1",
+        headers: HashMap():add("Authorization", "Bearer #{StatusBadge.TOKEN}")
+      ).data
+
+      let parseTimer = Timer():start()
+      let HashMap response = JsonDeserializer().parseObject(responseData)
+      StatusBadge.log.trace("Parse took #{parseTimer.stop().duration}ms")
+
+      let Object runObj = ((Array)response["workflow_runs"]).first
+      let HashMap run = (HashMap)runObj
     })
 
     Console.writeLine("StatusBadge: #{timer.stop()}")
