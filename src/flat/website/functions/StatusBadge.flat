@@ -16,7 +16,6 @@ class {
 
   public async run() -> String {
     let Array<HashMap<String, String>> badges = JsonDeserializer().parseArray(File("res/badges.json"))
-    let timer = Timer():start()
 
     let Array<HashMap<String, String>> svgs = badges.mapParallel(async (badge) => {
       let svgData = Http.get(badge["svg"]).data
@@ -26,8 +25,6 @@ class {
         :add("url", badge["url"])
         :add("label", badge["label"])
     })
-
-    Console.writeLine("StatusBadge: #{timer.stop()}")
 
     var Int x = 0
     var Int y = 0
