@@ -148,5 +148,10 @@
     "label": "Test Flat-Website-Backend",
     "svg": "https://github.com/FlatLang/Flat-Website-Backend/actions/workflows/test.yml/badge.svg",
     "url": "https://github.com/FlatLang/Flat-Website-Backend/actions/workflows/test.yml"
+  },
+  {
+    "label": "Test Server",
+    "svg": "https://github.com/FlatLang/Server/actions/workflows/test.yml/badge.svg",
+    "url": "https://github.com/FlatLang/Server/actions/workflows/test.yml"
   }
 ]
