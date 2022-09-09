@@ -61,12 +61,16 @@ class {
       |"
   }
 
-  static generateStatusBox(String url, String title, Bool success, Int x, Int y) -> String {
-    let titleElement = "<" + "title>" + title + "</" + "title>"
-
+  static generateStatusBox(
+    String url,
+    String title,
+    Bool success,
+    Int x,
+    Int y
+  ) -> String {
     return "|
       <a target=\"_blank\" href=\"#{url}\">
-        #{titleElement}
+        <title>#{title}</title>
         <g font-family=\"'DejaVu Sans',Verdana,Geneva,sans-serif\" font-size=\"11\">
           <rect x=\"#{x}\" y=\"#{y}\" width=\"20\" height=\"20\" ry=\"2\" rx=\"2\" fill=\"url(#{success ? "\#success-fill" : "\#failing-fill"})\"/>
         </g>
