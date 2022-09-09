@@ -1,5 +1,7 @@
 package flat/website/functions
 
+import flat/log/Logger
+
 import flatlang/io/File
 import flatlang/io/FileReader
 import flatlang/json/JsonDeserializer
@@ -8,6 +10,8 @@ import flatlang/http/Http
 import flatlang/time/Timer
 
 class {
+  let static Logger log = Logger(StatusBadge.class)
+
   public construct() {}
 
   public async run() -> String {

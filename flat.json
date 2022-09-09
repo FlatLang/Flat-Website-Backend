@@ -20,7 +20,8 @@
         "github:FlatLang/Json": "master",
         "github:FlatLang/Http": "master",
         "github:FlatLang/Time": "master",
-        "github:FlatLang/FuCli": "master"
+        "github:FlatLang/FuCli": "master",
+        "github:FlatLang/Logger": "master"
       }
     },
     "cmd": {
