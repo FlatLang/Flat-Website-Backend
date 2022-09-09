@@ -52,7 +52,7 @@ class {
       });
     }
 
-    Console.writeLine(timer.stop())
+    Console.writeLine("StatusBadge: #{timer.stop()}")
 
     var Int x = 0
     var Int y = 0
