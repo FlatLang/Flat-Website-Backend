@@ -27,18 +27,16 @@ class {
 
     var Int x = 0
     var Int y = 0
-    var Int maxWidth = 0
+    let canvasWidth = 800
 
     let svgContents = svgs.map((entry, i) => {
       let svgContent = entry["svg"]
       let success = svgContent.contains("passing")
       let content = generateStatusBox(entry["url"], entry["label"], success, x, y)
 
-      maxWidth = Math.max(x + 20, maxWidth)
-
       x += 20 + 1
 
-      if (x > 300 && i != svgs.count - 1) {
+      if (x + 20 > canvasWidth && i != svgs.count - 1) {
         x = 0
         y += 20 + 1
       }
@@ -47,7 +45,7 @@ class {
     })
 
     return "|
-      <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 #{maxWidth} #{y + 20}\">
+      <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 #{canvasWidth} #{y + 20}\">
         <defs xmlns=\"http://www.w3.org/2000/svg\">
           <linearGradient id=\"success-fill\" x1=\"50%\" y1=\"0%\" x2=\"50%\" y2=\"100%\">
             <stop stop-color=\"\#34D058\" offset=\"0%\"/>
