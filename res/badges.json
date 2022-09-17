@@ -229,5 +229,12 @@
     "url": "https://github.com/FlatLang/Glob/actions/workflows/test.yml",
     "repoOrganization": "FlatLang",
     "repoName": "Glob"
+  },
+  {
+    "label": "Test Flast",
+    "svg": "https://github.com/FlatLang/Flast/actions/workflows/test.yml/badge.svg",
+    "url": "https://github.com/FlatLang/Flast/actions/workflows/test.yml",
+    "repoOrganization": "FlatLang",
+    "repoName": "Flast"
   }
 ]
