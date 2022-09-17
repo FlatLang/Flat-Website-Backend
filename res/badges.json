@@ -215,5 +215,19 @@
     "url": "https://github.com/FlatLang/Server/actions/workflows/test.yml",
     "repoOrganization": "FlatLang",
     "repoName": "Server"
+  },
+  {
+    "label": "Test GitHubClient",
+    "svg": "https://github.com/FlatLang/GitHubClient/actions/workflows/test.yml/badge.svg",
+    "url": "https://github.com/FlatLang/GitHubClient/actions/workflows/test.yml",
+    "repoOrganization": "FlatLang",
+    "repoName": "GitHubClient"
+  },
+  {
+    "label": "Test Glob",
+    "svg": "https://github.com/FlatLang/Glob/actions/workflows/test.yml/badge.svg",
+    "url": "https://github.com/FlatLang/Glob/actions/workflows/test.yml",
+    "repoOrganization": "FlatLang",
+    "repoName": "Glob"
   }
 ]
