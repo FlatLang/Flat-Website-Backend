@@ -1,7 +1,6 @@
 package flat/website/functions
 
 import flat/log/Logger
-
 import flat/io/File
 import flat/io/FileReader
 import flat/json/JsonDeserializer
