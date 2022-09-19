@@ -19,7 +19,7 @@ class {
     let statusBadge = StatusBadge()
     let githubStatusPage = GitHubStatusPage()
 
-    server.get("/badges.svg", async (req, res) => {
+    server.get("/badges.svg", (req, res) => {
       res.setHeader("Content-Type", "image/svg+xml")
       res.setHeader("Cache-Control", "max-age=300, private")
       res.setHeader("x-content-type-options", "nosniff")
@@ -28,7 +28,7 @@ class {
       res.send(statusBadge.run())
     })
 
-    server.get("/github-status", async (req, res) => {
+    server.get("/github-status", (req, res) => {
       res.setHeader("Content-Type", "text/html")
       res.setHeader("x-content-type-options", "nosniff")
       res.setHeader("x-frame-options", "deny")
