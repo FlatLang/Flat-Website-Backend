@@ -1,8 +1,8 @@
 package flat/website/functions
 
 import flat/server/Server
-import flatlang/fucli/FuCli
-import flatlang/fucli/CliArg
+import flat/fucli/FuCli
+import flat/fucli/CliArg
 
 class {
   let static Int DEFAULT_PORT = 3005
