@@ -18,6 +18,7 @@ class {
 
     let statusBadge = StatusBadge()
     let githubStatusPage = GitHubStatusPage()
+    let airshipController = AirshipController()
 
     server.get("/badges.svg", (req, res) => {
       res.setHeader("Content-Type", "image/svg+xml")
@@ -34,6 +35,10 @@ class {
       res.setHeader("x-frame-options", "deny")
       res.setHeader("x-xss-protection", "0")
       res.send(githubStatusPage.run())
+    })
+
+    server.get("/airship/latest/:assetName", (req, res) => {
+      airshipController.getLatestAsset(req, res)
     })
 
     let serverStarted = server.listen(port)$
