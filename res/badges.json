@@ -231,10 +231,10 @@
     "repoName": "Glob"
   },
   {
-    "label": "Test Flast",
-    "svg": "https://github.com/FlatLang/Flast/actions/workflows/test.yml/badge.svg",
-    "url": "https://github.com/FlatLang/Flast/actions/workflows/test.yml",
+    "label": "Test Flat-AST",
+    "svg": "https://github.com/FlatLang/Flat-AST/actions/workflows/test.yml/badge.svg",
+    "url": "https://github.com/FlatLang/Flat-AST/actions/workflows/test.yml",
     "repoOrganization": "FlatLang",
-    "repoName": "Flast"
+    "repoName": "Flat-AST"
   }
 ]
