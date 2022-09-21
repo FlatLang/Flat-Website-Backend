@@ -243,5 +243,12 @@
     "url": "https://github.com/FlatLang/Flat-Parser/actions/workflows/test.yml",
     "repoOrganization": "FlatLang",
     "repoName": "Flat-Parser"
+  },
+  {
+    "label": "Test Flat-Annotations",
+    "svg": "https://github.com/FlatLang/Flat-Annotations/actions/workflows/test.yml/badge.svg",
+    "url": "https://github.com/FlatLang/Flat-Annotations/actions/workflows/test.yml",
+    "repoOrganization": "FlatLang",
+    "repoName": "Flat-Annotations"
   }
 ]
