@@ -257,5 +257,12 @@
     "url": "https://github.com/FlatLang/Flat-Lexer/actions/workflows/test.yml",
     "repoOrganization": "FlatLang",
     "repoName": "Flat-Lexer"
+  },
+  {
+    "label": "Test Stream",
+    "svg": "https://github.com/FlatLang/Stream/actions/workflows/test.yml/badge.svg",
+    "url": "https://github.com/FlatLang/Stream/actions/workflows/test.yml",
+    "repoOrganization": "FlatLang",
+    "repoName": "Stream"
   }
 ]
