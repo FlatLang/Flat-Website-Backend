@@ -250,5 +250,12 @@
     "url": "https://github.com/FlatLang/Flat-Annotations/actions/workflows/test.yml",
     "repoOrganization": "FlatLang",
     "repoName": "Flat-Annotations"
+  },
+  {
+    "label": "Test Flat-Lexer",
+    "svg": "https://github.com/FlatLang/Flat-Lexer/actions/workflows/test.yml/badge.svg",
+    "url": "https://github.com/FlatLang/Flat-Lexer/actions/workflows/test.yml",
+    "repoOrganization": "FlatLang",
+    "repoName": "Flat-Lexer"
   }
 ]
