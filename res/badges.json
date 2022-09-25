@@ -271,5 +271,12 @@
     "url": "https://github.com/FlatLang/Flat-Compiler/actions/workflows/test.yml",
     "repoOrganization": "FlatLang",
     "repoName": "Flat-Compiler"
+  },
+  {
+    "label": "Test Flat-Compiler-Models",
+    "svg": "https://github.com/FlatLang/Flat-Compiler-Models/actions/workflows/test.yml/badge.svg",
+    "url": "https://github.com/FlatLang/Flat-Compiler-Models/actions/workflows/test.yml",
+    "repoOrganization": "FlatLang",
+    "repoName": "Flat-Compiler-Models"
   }
 ]
