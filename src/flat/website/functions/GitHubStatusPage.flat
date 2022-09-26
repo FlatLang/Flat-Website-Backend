@@ -8,7 +8,7 @@ import flat/http/Http
 import flat/time/Timer
 
 class {
-  let static String pageHtml = FileReader(File("res/github-status.html")).readAllContents()
+  let lazy String pageHtml => FileReader(File("res/github-status.html")).readAllContents()
 
   public construct() {}
 
