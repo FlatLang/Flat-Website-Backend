@@ -9,11 +9,11 @@ import flat/time/Timer
 
 class {
   let lazy String pageHtml => FileReader(File("res/github-status.html")).readAllContents()
+  let lazy Array<HashMap<String, String>> badges => JsonDeserializer().parseArray(File("res/badges.json"))
 
   public construct() {}
 
   public async run() -> String {
-    let Array<HashMap<String, String>> badges = JsonDeserializer().parseArray(File("res/badges.json"))
     let timer = Timer():start()
 
     let svgs = badges.mapParallel((badge) => {
