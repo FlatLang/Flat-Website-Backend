@@ -16,11 +16,15 @@ class {
   public async run() -> String {
     let timer = Timer():start()
 
-    let svgs = badges.mapParallel((badge) => {
+    let svgs = badges.mapParallel((badge, i) => {
       let svgData = Http.get(badge["svg"]).data
 
+      let namespacedSvg = svgData
+        .replace("workflow-fill", "workflow-fill-#{i}")
+        .replace("state-fill", "state-fill-#{i}")
+
       return HashMap()
-        :add("svg", svgData)
+        :add("svg", namespacedSvg)
         :add("url", badge["url"])
         :add("label", badge["label"])
     })
