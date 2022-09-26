@@ -10,12 +10,11 @@ import flat/time/Timer
 
 class {
   let static Logger log = Logger(StatusBadge.class)
+  let lazy Array<HashMap<String, String>> badges => JsonDeserializer().parseArray(File("res/badges.json"))
 
   public construct() {}
 
   public async run() -> String {
-    let Array<HashMap<String, String>> badges = JsonDeserializer().parseArray(File("res/badges.json"))
-
     let Array<HashMap<String, String>> svgs = badges.mapParallel((badge) => {
       let svgData = Http.get(badge["svg"]).data
 
