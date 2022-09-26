@@ -32,13 +32,14 @@ class {
     Console.writeLine("GitHubStatusPage: #{timer.stop()}")
 
     let svgContents = svgs.map((entry, i) => {
-      let aTagStart = "<" + "a target=\"_blank\" href=\"" + entry["url"] + "\"" + ">";
-      let aTagEnd = "<" + "/a" + ">"
+      let url = entry["url"]
       let svgContent = entry["svg"]
 
-      return aTagStart +
-        svgContent +
-        aTagEnd
+      return "|
+        <a target=\"_blank\" href=\"#{url}\">
+          #{svgContent}
+        </a>
+        |"
     })
 
     return pageHtml.replace("{{badges}}", svgContents.join(""))
