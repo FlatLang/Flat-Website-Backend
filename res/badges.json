@@ -292,5 +292,12 @@
     "url": "https://github.com/FlatLang/Flat-ES6-Writer/actions/workflows/test.yml",
     "repoOrganization": "FlatLang",
     "repoName": "Flat-ES6-Writer"
+  },
+  {
+    "label": "Test Parser-Core",
+    "svg": "https://github.com/FlatLang/Parser-Core/actions/workflows/test.yml/badge.svg",
+    "url": "https://github.com/FlatLang/Parser-Core/actions/workflows/test.yml",
+    "repoOrganization": "FlatLang",
+    "repoName": "Parser-Core"
   }
 ]
