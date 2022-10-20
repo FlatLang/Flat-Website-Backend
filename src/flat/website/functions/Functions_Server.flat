@@ -5,9 +5,9 @@ import flat/fucli/FuCli
 import flat/fucli/CliArg
 
 class {
-  let static Int DEFAULT_PORT = 3005
+  static Int DEFAULT_PORT = 3005
 
-  let static CliArg portArg = CliArg("--port", count: 1)
+  static CliArg portArg = CliArg("--port", count: 1)
 
   public static async main(String[] args) {
     let cli = FuCli([portArg]):parse(args.skip(1))

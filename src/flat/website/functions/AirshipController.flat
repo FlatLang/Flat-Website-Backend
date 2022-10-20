@@ -8,8 +8,8 @@ import flat/server/Request
 import flat/server/Response
 
 class {
-  let static String TOKEN = System.getEnv("GITHUB_FETCH_ACTIONS_TOKEN")
-  let static Logger log = Logger(AirshipController.class)
+  static String TOKEN = System.getEnv("GITHUB_FETCH_ACTIONS_TOKEN")
+  static Logger log = Logger(AirshipController.class)
 
   public construct() {}
 

@@ -9,7 +9,7 @@ import flat/http/Http
 import flat/time/Timer
 
 class {
-  let static Logger log = Logger(StatusBadge.class)
+  static Logger log = Logger(StatusBadge.class)
   let lazy Array<HashMap<String, String>> badges => JsonDeserializer().parseArray(File("res/badges.json"))
 
   public construct() {}
