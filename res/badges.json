@@ -266,6 +266,13 @@
     "repoName": "Stream"
   },
   {
+    "label": "Test Event-Stream",
+    "svg": "https://github.com/FlatLang/Event-Stream/actions/workflows/test.yml/badge.svg",
+    "url": "https://github.com/FlatLang/Event-Stream/actions/workflows/test.yml",
+    "repoOrganization": "FlatLang",
+    "repoName": "Event-Stream"
+  },
+  {
     "label": "Test Flat-Compiler",
     "svg": "https://github.com/FlatLang/Flat-Compiler/actions/workflows/test.yml/badge.svg",
     "url": "https://github.com/FlatLang/Flat-Compiler/actions/workflows/test.yml",
