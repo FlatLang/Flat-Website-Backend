@@ -306,5 +306,19 @@
     "url": "https://github.com/FlatLang/Parser-Core/actions/workflows/test.yml",
     "repoOrganization": "FlatLang",
     "repoName": "Parser-Core"
+  },
+  {
+    "label": "Test Java-Annotations",
+    "svg": "https://github.com/FlatLang/Java-Annotations/actions/workflows/test.yml/badge.svg",
+    "url": "https://github.com/FlatLang/Java-Annotations/actions/workflows/test.yml",
+    "repoOrganization": "FlatLang",
+    "repoName": "Java-Annotations"
+  },
+  {
+    "label": "Test Java-Parser",
+    "svg": "https://github.com/FlatLang/Java-Parser/actions/workflows/test.yml/badge.svg",
+    "url": "https://github.com/FlatLang/Java-Parser/actions/workflows/test.yml",
+    "repoOrganization": "FlatLang",
+    "repoName": "Java-Parser"
   }
 ]
