@@ -320,5 +320,12 @@
     "url": "https://github.com/FlatLang/Java-Parser/actions/workflows/test.yml",
     "repoOrganization": "FlatLang",
     "repoName": "Java-Parser"
+  },
+  {
+    "label": "Test Java-AST",
+    "svg": "https://github.com/FlatLang/Java-AST/actions/workflows/test.yml/badge.svg",
+    "url": "https://github.com/FlatLang/Java-AST/actions/workflows/test.yml",
+    "repoOrganization": "FlatLang",
+    "repoName": "Java-AST"
   }
 ]
