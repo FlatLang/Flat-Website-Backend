@@ -327,5 +327,19 @@
     "url": "https://github.com/FlatLang/Java-AST/actions/workflows/test.yml",
     "repoOrganization": "FlatLang",
     "repoName": "Java-AST"
+  },
+  {
+    "label": "Test Flat-AST-Visitor",
+    "svg": "https://github.com/FlatLang/Flat-AST-Visitor/actions/workflows/test.yml/badge.svg",
+    "url": "https://github.com/FlatLang/Flat-AST-Visitor/actions/workflows/test.yml",
+    "repoOrganization": "FlatLang",
+    "repoName": "Flat-AST-Visitor"
+  },
+  {
+    "label": "Test Flat-Flat-Writer",
+    "svg": "https://github.com/FlatLang/Flat-Flat-Writer/actions/workflows/test.yml/badge.svg",
+    "url": "https://github.com/FlatLang/Flat-Flat-Writer/actions/workflows/test.yml",
+    "repoOrganization": "FlatLang",
+    "repoName": "Flat-Flat-Writer"
   }
 ]
