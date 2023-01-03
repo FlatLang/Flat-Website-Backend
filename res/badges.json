@@ -341,5 +341,12 @@
     "url": "https://github.com/FlatLang/Flat-Flat-Writer/actions/workflows/test.yml",
     "repoOrganization": "FlatLang",
     "repoName": "Flat-Flat-Writer"
+  },
+  {
+    "label": "Test Progress-Bar",
+    "svg": "https://github.com/FlatLang/Progress-Bar/actions/workflows/test.yml/badge.svg",
+    "url": "https://github.com/FlatLang/Progress-Bar/actions/workflows/test.yml",
+    "repoOrganization": "FlatLang",
+    "repoName": "Progress-Bar"
   }
 ]
