@@ -26,7 +26,7 @@ class {
     ).data
 
     let Array<HashMap<String, Object>> releases = JsonDeserializer().parseArray(responseData)
-    let sortedReleases = releases.sort((a, b) => -a["created_at"].toString().compareTo(b["created_at"].toString()))
+    let sortedReleases = releases.sort({ -_a["created_at"].toString().compareTo(_b["created_at"].toString()) })
     let latestRelease = sortedReleases.first
     let HashMap<String, Object>[] assets = (Array)latestRelease["assets"]
     let HashMap<String, Object> asset = assets.firstWhere({ _["name"].toString() == assetName })

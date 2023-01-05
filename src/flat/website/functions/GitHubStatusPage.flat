@@ -16,24 +16,24 @@ class {
   public async run() -> String {
     let timer = Timer():start()
 
-    let svgs = badges.mapParallel((badge, i) => {
-      let svgData = Http.get(badge["svg"]).data
+    let svgs = badges.mapParallel({
+      let svgData = Http.get(_x["svg"]).data
 
       let namespacedSvg = svgData
-        .replace("workflow-fill", "workflow-fill-#{i}")
-        .replace("state-fill", "state-fill-#{i}")
+        .replace("workflow-fill", "workflow-fill-#{_i}")
+        .replace("state-fill", "state-fill-#{_i}")
 
       return HashMap()
         :add("svg", namespacedSvg)
-        :add("url", badge["url"])
-        :add("label", badge["label"])
+        :add("url", _x["url"])
+        :add("label", _x["label"])
     })
 
     Console.writeLine("GitHubStatusPage: #{timer.stop()}")
 
-    let svgContents = svgs.map((entry, i) => {
-      let url = entry["url"]
-      let svgContent = entry["svg"]
+    let svgContents = svgs.map({
+      let url = _x["url"]
+      let svgContent = _x["svg"]
 
       return "|
         <a target=\"_blank\" href=\"#{url}\">

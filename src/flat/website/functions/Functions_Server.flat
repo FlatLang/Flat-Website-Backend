@@ -20,25 +20,25 @@ class {
     let githubStatusPage = GitHubStatusPage()
     let airshipController = AirshipController()
 
-    server.get("/badges.svg", (req, res) => {
-      res.setHeader("Content-Type", "image/svg+xml")
-      res.setHeader("Cache-Control", "max-age=300, private")
-      res.setHeader("x-content-type-options", "nosniff")
-      res.setHeader("x-frame-options", "deny")
-      res.setHeader("x-xss-protection", "0")
-      res.send(statusBadge.run())
+    server.get("/badges.svg", {
+      _res.setHeader("Content-Type", "image/svg+xml")
+      _res.setHeader("Cache-Control", "max-age=300, private")
+      _res.setHeader("x-content-type-options", "nosniff")
+      _res.setHeader("x-frame-options", "deny")
+      _res.setHeader("x-xss-protection", "0")
+      _res.send(statusBadge.run())
     })
 
-    server.get("/github-status", (req, res) => {
-      res.setHeader("Content-Type", "text/html")
-      res.setHeader("x-content-type-options", "nosniff")
-      res.setHeader("x-frame-options", "deny")
-      res.setHeader("x-xss-protection", "0")
-      res.send(githubStatusPage.run())
+    server.get("/github-status", {
+      _res.setHeader("Content-Type", "text/html")
+      _res.setHeader("x-content-type-options", "nosniff")
+      _res.setHeader("x-frame-options", "deny")
+      _res.setHeader("x-xss-protection", "0")
+      _res.send(githubStatusPage.run())
     })
 
-    server.get("/airship/latest/:assetName", (req, res) => {
-      airshipController.getLatestAsset(req, res)
+    server.get("/airship/latest/:assetName", {
+      airshipController.getLatestAsset(_req, _res)
     })
 
     let serverStarted = server.listen(port)$

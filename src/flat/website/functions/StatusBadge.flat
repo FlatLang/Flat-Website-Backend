@@ -15,27 +15,27 @@ class {
   public construct() {}
 
   public async run() -> String {
-    let Array<HashMap<String, String>> svgs = badges.mapParallel((badge) => {
-      let svgData = Http.get(badge["svg"]).data
+    let Array<HashMap<String, String>> svgs = badges.mapParallel({
+      let svgData = Http.get(_x["svg"]).data
 
       return HashMap()
         :add("svg", svgData)
-        :add("url", badge["url"])
-        :add("label", badge["label"])
+        :add("url", _x["url"])
+        :add("label", _x["label"])
     })
 
     var Int x = 0
     var Int y = 0
     let canvasWidth = 800
 
-    let svgContents = svgs.map((entry, i) => {
-      let svgContent = entry["svg"]
+    let svgContents = svgs.map({
+      let svgContent = _x["svg"]
       let success = svgContent.contains("passing")
-      let content = generateStatusBox(entry["url"], entry["label"], success, x, y)
+      let content = generateStatusBox(_x["url"], _x["label"], success, x, y)
 
       x += 20 + 1
 
-      if (x + 20 > canvasWidth && i != svgs.count - 1) {
+      if (x + 20 > canvasWidth && _i != svgs.count - 1) {
         x = 0
         y += 20 + 1
       }
