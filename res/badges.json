@@ -56,11 +56,11 @@
     "repoName": "IO"
   },
   {
-    "label": "Test Nest",
-    "svg": "https://github.com/FlatLang/Nest/actions/workflows/test.yml/badge.svg",
-    "url": "https://github.com/FlatLang/Nest/actions/workflows/test.yml",
+    "label": "Test Test",
+    "svg": "https://github.com/FlatLang/Test/actions/workflows/test.yml/badge.svg",
+    "url": "https://github.com/FlatLang/Test/actions/workflows/test.yml",
     "repoOrganization": "FlatLang",
-    "repoName": "Nest"
+    "repoName": "Test"
   },
   {
     "label": "Test FuCli",
